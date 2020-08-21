@@ -1,0 +1,40 @@
+
+//body
+HStack {
+    ForEach(0..<4) { index in 
+        CardView(isFaceUp: false)
+    }
+}
+.padding()
+.foregroundColor(Color.orange)
+.font(Font.largeTitle)
+
+
+struct CardView: View {
+    var isFaceUp: Bool
+
+    var body: some view {
+        ZStack {
+            if isFaceUp {
+                RoundedRectangle(cornerRadius: 10.0).fill(Color.white)
+                RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 3)
+                Text("X")
+            } else {
+                RoundedRectangle(cornerRadius: 10.0).fill()
+            }
+        }
+    }
+}
+
+
+//DEtalhes: GIT
+echo "# memorize" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Oguima/memorize.git
+git push -u origin master
+
+git remote add origin https://github.com/Oguima/memorize.git
+git push -u origin master
+
