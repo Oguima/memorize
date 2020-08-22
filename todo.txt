@@ -38,3 +38,4 @@ git push -u origin master
 git remote add origin https://github.com/Oguima/memorize.git
 git push -u origin master
 
+Repositorio: https://github.com/Oguima/memorize.git
